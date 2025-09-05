@@ -20,7 +20,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 # Aliases
@@ -28,3 +28,4 @@ alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
+export DOCKER_OPTS+=" --insecure-registry repository.auto.sciencelogic.local"
